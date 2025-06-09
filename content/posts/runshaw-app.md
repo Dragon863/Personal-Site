@@ -6,7 +6,7 @@ header_image: "runshaw-coverimg.png"
 header_image_fit: cover
 summary: "I have been working on a Flutter app for me and my friends to share timetables, view bus updates and see who is free when. Read to find out how I built it and what I learned along the way."
 buttons:
-  - href: "https://apps.apple.com/us/app/my-runshaw/id6739817271"
+  - href: "https://apps.apple.com/gb/app/my-runshaw/id6739817271"
     text: "App Store"
     imgUrl: "https://apps.apple.com/favicon.ico"
   - href: "https://play.google.com/store/apps/details?id=com.daniel.runshaw"
