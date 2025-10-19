@@ -46,7 +46,7 @@
         },
         {
             "title": "Volunteering for Hack Club",
-            "summary": "In May I started reviewing submissions for Hack Club's 'Cider' program, approving grants for young developers to buy an Apple Developer Program membership and publish their work on the App Store.",
+            "summary": "In May I started reviewing submissions for Hack Club's 'Cider' program, approving grants for young developers to buy an Apple Developer Program membership and publish their work on the App Store. I was involved until the program ended in September",
             "type": "large",
             "image": "/img/cider.png",
             "date_published": "2025-05-03T12:00:00Z",
@@ -63,6 +63,17 @@
             "button_color": "red8",
             "button_url": "https://runshaw.hackclub.com/",
             "button_text": "Details"
+        },
+        {
+            "title": "Daydream Manchester Organiser",
+            "summary": "I was on a team of 4 organisers who hosted a hackathon in Manchester with ~30 attendees, a satellite event for Hack Club's 'Daydream' game jam. I organised on the day, communicated with sponsors, managed infrastructure for 5 UK satellite events, and marketed the event on social media",
+            "type": "large",
+            "image": "/img/daydream.jpeg",
+            "date_published": "2025-09-28T12:00:00Z",
+            "button_color": "pink4",
+            "button_url": "https://daydream.hackclub.com/manchester",
+            "button_text": "Website",
+            "left": true
         }
     ]
 }
