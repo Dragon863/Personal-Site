@@ -6,8 +6,6 @@ header_image: "place-cover.png"
 header_image_fit: cover
 summary: "I made a physical r/place clone using a Raspberry Pi, ESP32, 64x64 LED matrix and a Flask backend. Take a look at how I built it!"
 buttons:
-  - href: "https://place.danieldb.uk"
-    text: "Try now"
 left: true
 ---
 
@@ -35,7 +33,7 @@ Unfortunately, the internet is the internet and so I had to implement a way for 
 
 #### Conclusion
 
-This project was a lot of fun to build, and I'm really happy with how it turned out. It's a great conversation starter, and I can't wait to see what people create with it. If you want to try it out for yourself, you can visit [place.danieldb.uk](https://place.danieldb.uk) and start placing pixels. I hope you enjoy it as much as I enjoyed creating it!
+This project was a lot of fun to build, and I'm really happy with how it turned out. It's a great conversation starter, and I can't wait to see what people create with it. If you want to try it out for yourself, ~~you can visit [place.danieldb.uk](https://place.danieldb.uk) and start placing pixels~~ (edit: sadly I've had to take this down as it was simply too bright to run in my room 24/7!). I hope you enjoy it as much as I enjoyed creating it!
 
 #### Extra: Bot Protection
 
