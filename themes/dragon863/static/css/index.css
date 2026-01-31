@@ -47,7 +47,7 @@ main {
     margin-top: 0px;
 }
 
-a .link {
+a.link {
     text-shadow: 0 0 40px var(--primary) !important;
 }
 
@@ -148,4 +148,10 @@ a .link {
 button i,
 button span {
     color: white;
+}
+
+main a {
+    -webkit-user-select: text;
+    user-select: text;
+    display: inline;
 }

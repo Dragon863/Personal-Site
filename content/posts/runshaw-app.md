@@ -2,7 +2,7 @@
 title: "Building an App to make College Life Easier"
 date: 2024-12-02
 draft: false
-header_image: "runshaw-coverimg.png"
+header_image: "runshaw-new-cover.png"
 header_image_fit: cover
 summary: "I have been working on a Flutter app for me and my friends to share timetables, view bus updates and see who is free when. Read to find out how I built it and what I learned along the way."
 buttons:

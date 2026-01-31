@@ -1,0 +1,78 @@
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+h5 {
+    padding-left: 1.5rem;
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif;
+    line-height: normal;
+    color: rgb(235, 235, 235);
+    font-size: 20px;
+}
+
+ul {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+li::marker {
+    content: " >";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li {
+    padding-left: 8px;
+    font-size: 20px;
+    color: rgb(235, 235, 235);
+}
+
+#header-small {
+    font-weight: medium;
+    font-size: 48px;
+    letter-spacing: 1px;
+    color: white
+}
+
+#header-large {
+    font-weight: medium;
+    font-size: 72px;
+    letter-spacing: 1px;
+    color: white"
+
+}
+
+h4 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h5 {
+    padding-left: 0;
+}
+
+main a {
+    color: #FF2D2D;
+    text-decoration: underline;
+    cursor: pointer;
+    -webkit-user-select: text;
+    user-select: text;
+    display: inline;
+}
+
+nav a {
+    text-decoration: none !important;
+}
+
+code {
+    color: #ffbe85;
+    background: #161f27;
+    font-size: 16px;
+}
+
+h1 {
+    color: #FFFFFF;
+}
