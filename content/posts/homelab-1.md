@@ -1,6 +1,6 @@
 ---
 title: "Moving from Homelab to Home-Prod!"
-date: 2026-01-16
+date: 2026-01-31
 draft: false
 header_image: "homelab-1-cover.png"
 header_image_fit: cover
