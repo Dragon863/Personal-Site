@@ -1,6 +1,26 @@
-<div class="large-space"></div>
-<nav class="wrap">
-    <a href="mailto:hi@danieldb.uk" class="link large-text">Contact Me</a>
-    •
-    <a href="https://github.com/Dragon863" class="link large-text">Github</a>
-</nav>
+<div class="grid medium-padding" style="align-items:center;gap:1rem;">
+    <div class="s12 m6 l6 left-align m l">
+        <span id="footertext">© 2026 Daniel Benge</span>
+    </div>
+    <div class="s12 m6 l6 center-align s">
+        <span id="footertext">© 2026 Daniel Benge</span>
+    </div>
+
+    <nav class="s12 m6 l6 right-align m l" aria-label="Footer navigation">
+        <a href="/" class="link bold" style="margin-left:1rem;">Home</a>
+        <a href="/#experience" class="link bold" style="margin-left:1rem;">Experience</a>
+        <a href="/#projects" class="link bold" style="margin-left:1rem;">Projects</a>
+        <a href="/#contact" class="link bold" style="margin-left:1rem;">Contact</a>
+    </nav>
+    <nav class="s12 m6 l6 center-align s" aria-label="Footer navigation">
+        <a href="/" class="link bold" style="margin-left:1rem;">Home</a>
+        <a href="/#experience" class="link bold" style="margin-left:1rem;">Experience</a>
+        <a href="/#projects" class="link bold" style="margin-left:1rem;">Projects</a>
+        <a href="/#contact" class="link bold" style="margin-left:1rem;">Contact</a>
+    </nav>
+</div>
+<script>
+    const footerText = document.getElementById('footertext');
+    const currentYear = new Date().getFullYear();
+    footerText.textContent = `© ${currentYear} Daniel Benge`;
+</script>

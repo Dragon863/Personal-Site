@@ -65,6 +65,17 @@
             "button_text": "Details"
         },
         {
+            "title": "Ministry of Defence Cyber Bursary Programme",
+            "summary": "I was selected to be a part of a small cohort on the MoD Cyber Bursary Programme, which lasted throughout the duration of my second year of college. I was awarded top student on Immersive Labs where I completed hundreds of CTF labs, a spotlight award, and was the programmer on the 'Project Vanguard' team which came second in the final challenge which involved using a Unitree robot dog in a defence scenario.",
+            "type": "large",
+            "image": "/img/cyberbursary.png",
+            "date_published": "2025-09-01T12:00:00Z",
+            "button_color": "blue9",
+            "button_url": "https://www.linkedin.com/feed/update/urn:li:activity:7443781505941745664/",
+            "button_text": "Read more",
+            "left": true
+        },
+        {
             "title": "Daydream Manchester Organiser",
             "summary": "I was on a team of 4 organisers who hosted a hackathon in Manchester with ~30 attendees, a satellite event for Hack Club's 'Daydream' game jam. I organised on the day, communicated with sponsors, managed infrastructure for 5 UK satellite events, and marketed the event on social media",
             "type": "large",
@@ -72,6 +83,17 @@
             "date_published": "2025-09-28T12:00:00Z",
             "button_color": "pink4",
             "button_url": "https://daydream.hackclub.com/manchester",
+            "button_text": "Website",
+            "left": false
+        },
+        {
+            "title": "Work Experience with Runshaw IT Services",
+            "summary": "Thanks to the world-class IT Services team, I spent my study days in 2nd year working with them and was able to gain experience by helping with various tasks including imaging and deployment, toubleshooting, and even assisting an external pentester with a security assessment of the college's network.",
+            "type": "large",
+            "image": "/img/its.png",
+            "date_published": "2026-04-15T12:00:00Z",
+            "button_color": "yellow8",
+            "button_url": "https://webservices.runshaw.ac.uk/",
             "button_text": "Website",
             "left": true
         }

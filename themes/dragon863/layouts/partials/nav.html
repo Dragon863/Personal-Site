@@ -9,10 +9,6 @@
         <i>book</i>
         <div>Blog</div>
     </a>
-    <a class="{{ if eq .currentPage "mywork" }}active{{ end }}" href="/experience/">
-        <i>work</i>
-        <div>Work</div>
-    </a>
     <a data-ui="#share" onclick="document.getElementById('copyText').innerText='Copy URL'">
         <i>share</i>
         <div>Share</div>
@@ -25,7 +21,7 @@
     <div>Send the link to this page!</div>
     <nav class="left-align">
         <nav class="no-space">
-            <button class="border left-round" onclick="sharePage()">
+            <button class="left-round" onclick="sharePage()">
                 <i>link</i>
                 <span id="copyText">Copy URL</span>
             </button>
@@ -43,9 +39,6 @@
     </a>
     <a class="{{ if eq .currentPage "blog" }}active{{ end }}" href="/posts/">
         <i>book</i>
-    </a>
-    <a class="{{ if eq .currentPage "mywork" }}active{{ end }}" href="/experience/">
-        <i>work</i>
     </a>
     <a data-ui="#share" onclick="document.getElementById('copyText').innerText='Copy URL'">
         <i>share</i>

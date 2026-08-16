@@ -19,6 +19,15 @@
         {{- partial "footer.html" . -}}
     </main>
     <script>
+        const formatMonthYear = (value) => {
+            const date = new Date(value);
+            if (Number.isNaN(date.getTime())) return '';
+            return new Intl.DateTimeFormat('en-US', {
+                month: 'long',
+                year: 'numeric'
+            }).format(date);
+        };
+
         document.addEventListener('DOMContentLoaded', async () => {
             const feedUrl = `${window.location.protocol}//${window.location.host}/feed/feed.json`;
 
@@ -32,8 +41,7 @@
                 smallList.classList.add('border');
                 smallList.classList.add('medium-padding');
 
-                // Sort items by date_published descending
-                const sortedItems = feed.items.sort((a, b) =>
+                const sortedItems = [...feed.items].sort((a, b) =>
                     new Date(b.date_published) - new Date(a.date_published)
                 );
 
@@ -50,7 +58,7 @@
                                 </div>
                                 <div class="s12 m8">
                                     <div class="padding">
-                                        <div class="grey-text">${new Date(item.date_published).toLocaleDateString()}</div>
+                                        <div class="grey-text">${formatMonthYear(item.date_published)}</div>
                                         <h5 class="bold no-margin">${item.title}</h5>
                                         <p>${item.summary}</p>
                                         ${item.button_url && item.button_text ? `
@@ -72,7 +80,7 @@
                             <div class="grid no-space">
                                 <div class="s12 m8">
                                     <div class="padding">
-                                        <div class="grey-text">${new Date(item.date_published).toLocaleDateString()}</div>
+                                        <div class="grey-text">${formatMonthYear(item.date_published)}</div>
                                         <h5 class="bold no-margin">${item.title}</h5>
                                         <p>${item.summary}</p>
                                         ${item.button_url && item.button_text ? `
@@ -104,8 +112,7 @@
                             <div class="max wrap">
                                 <h6 class="small">${item.title}</h6>
                                 <div>${item.summary}</div>
-                                <div class="grey-text" style="padding-top: 2px;">${new Date(item.date_published).toLocaleDateString()}</div>
-
+                                <div class="grey-text" style="padding-top: 2px;">${formatMonthYear(item.date_published)}</div>
                             </div>
                         `;
 
@@ -113,7 +120,6 @@
                     }
                 }
 
-                // Append to DOM
                 const mainPage = document.querySelector('.page.left.active');
                 mainPage.appendChild(container);
                 if (smallList.children.length > 0) {

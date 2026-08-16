@@ -8,15 +8,15 @@
     <meta name="author" content="Daniel Benge">
     <meta property="og:site_name" content="Daniel Benge">
     <meta name="description"
-        content="Hi there, I'm Daniel Benge (aka @Dragon863), a 17 year old developer. Welcome to my personal blog / portfolio!">
+        content="Hi there, I'm Daniel Benge (aka @Dragon863), an 18 year old developer. Welcome to my personal blog / portfolio!">
     <meta name="keywords" content="Daniel Benge, Cybersecurity, Dragon863">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link href="/css/beer.min.css" rel="stylesheet" />
     <link href="/css/index.css" rel="stylesheet" />
-    <script type="module" src="/js/beer.min.js"></script>
-    <script src='https://analytics.stacc.cc/api/script/4Wx5IIzJGQ8p'></script>
+    <link href="https://cdn.jsdelivr.net/npm/beercss@5.0.3/dist/cdn/beer.min.css" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@5.0.3/dist/cdn/beer.min.js"></script>
     <script src="/js/clipboard.js"></script>
     <script src="/js/light.js"></script>
+    <script src="/js/home-feed.js" defer></script>
     <link rel="preload" fetchpriority="high" as="image" href="/img/bg.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,65 +30,160 @@
 </head>
 <!--We'll only use beercss for nav, everything else will be in plain css/html-->
 
-<body class="dark" style="height: 100vh; overflow: hidden;">
+<body class="dark">
     {{ partial "nav.html" (dict "currentPage" "home") }}
-    <main style="height:100%">
-        <div style="height:100%;">
+    <main>
+        <div class="main-content-top">
             <div id="main-box"
                 style="background: radial-gradient(circle at -100px -100px, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.8) 80px);">
             </div>
             <div class="main-top">
                 <div class="content">
-                    <h3 class="eyebrow center-align mobile">HEY THERE 👋️! I'M</h3>
-                    <h3 class="eyebrow desktop">HEY THERE 👋️! I'M</h3>
+                    <h3 class="eyebrow center-align mobile">Hello! 👋️ I'm</h3>
+                    <h3 class="eyebrow desktop">Hello! 👋️ I'm</h3>
                     <h1 class="name desktop">Daniel Benge</h1>
                     <h1 class="name center-align mobile">Daniel Benge</h1>
-                    <h2 class="sub-name desktop">Developer + A-Level Student</h2>
-                    <h2 class="sub-name center-align mobile">Developer + A-Level Student</h2>
+                    <h2 class="sub-name desktop">Developer + Student</h2>
+                    <h2 class="sub-name center-align mobile">Developer + Student</h2>
                     <div class="spacer"></div>
                     <div class="spacer s"></div>
-                    <p class="white-text limit-width description">I'm a 17 year old developer in the UK. I love
+                    <p class="white-text limit-width description">I'm an 18 year old developer in the UK. I'm passionate
+                        about
                         cybersecurity,
                         hardware
-                        hacking, linux, self-hosting, web design and flutter, and I'm also the founder of <a
-                            class="link underline" href="https://runshaw.hackclub.com/">Runshaw Hack Club</a>. Want
-                        to get in touch? Feel free to e-mail me at <a class="link underline"
-                            href="mailto:hi@danieldb.uk">hi@danieldb.uk</a>!</p>
+                        hacking, linux, self-hosting, web design and flutter. I'm always looking for new opportunities,
+                        so please don't hesitate to reach out!</p>
                     <div class="spacer"></div>
                     <div class="buttons-grid">
-                        <button class="extra border round" onclick="navigateToGithub()">
-                            <i>
-                                <svg width="20" height="20" viewBox="0 0 1024 1024" fill="#FFFFFF"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
-                                        transform="scale(64)" fill="#FFFFFF">
-                                    </path>
-                                </svg>
-                            </i>
-                        </button>
-                        <button class="extra border round" onclick="navigateToLinkedIn()">
-                            <i>
-                                <svg height="72" viewBox="0 0 72 72" width="72" xmlns="http://www.w3.org/2000/svg">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <path
-                                            d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z"
-                                            fill="#000000" />
-                                        <path
-                                            d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z"
-                                            fill="#FFFFFF" />
-                                    </g>
-                                </svg>
-                            </i>
-                        </button>
-                        <button class="extra border round" onclick="mailTo()">
-                            <i>mail</i>
-                        </button>
+                        <a href="https://github.com/Dragon863" target="_blank">
+                            <button class="extra border circle">
+                                <i>
+                                    <svg width="20" height="20" viewBox="0 0 1024 1024" fill="#FFFFFF"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+                                            transform="scale(64)" fill="#FFFFFF">
+                                        </path>
+                                    </svg>
+                                </i>
+                            </button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/daniel-benge" target="_blank">
+                            <button class="extra border circle" onclick="navigateToLinkedIn()">
+                                <i>
+                                    <svg height="72" viewBox="0 0 72 72" width="72" xmlns="http://www.w3.org/2000/svg">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path
+                                                d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z"
+                                                fill="#000000" />
+                                            <path
+                                                d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z"
+                                                fill="#FFFFFF" />
+                                        </g>
+                                    </svg>
+                                </i>
+                            </button>
+                        </a>
+                        <a href="mailto:hi@danieldb.uk">
+                            <button class="extra border circle" onclick="mailTo()">
+                                <i>mail</i>
+                            </button>
+                        </a>
                     </div>
+                    <div class="spacer"></div>
+                    <div class="spacer"></div>
                 </div>
             </div>
         </div>
+        <div class="experience page active responsive large-padding" id="experience">
+            <div class="career-header-container">
+                <h2 class="career-eyebrow">// My Experience</h2>
+                <div class="career-line desktop"></div>
+            </div>
+        </div>
+        <div class="projects page active responsive large-padding" id="projects">
+            <div class="career-header-container">
+                <h2 class="career-eyebrow">// Featured Projects</h2>
+                <div class="career-line desktop"></div>
+            </div>
+            {{ with .Site.Data.projects }}
+            <div class="grid">
+                {{ range . }}
+                <div class="s12 m6 l4">
+                    <article class="no-padding">
+                        {{ if .image }}
+                        <img class="responsive large" src="{{ .image }}" alt="{{ .title }}">
+                        {{ end }}
+                        <div class="large-padding">
+                            <div class="max">
+                                <div class="project-meta">
+                                    <div class="project-heading">
+                                        <div class="project-status project-status-{{ .status | default " Complete" }}">
+                                            <span class="project-status-dot" aria-hidden="true"></span>
+                                            <span class="project-status-text">{{ .status | default "Complete" }}</span>
+                                        </div>
+                                        <h5 class="bold project-title">{{ .title }}</h5>
+                                    </div>
+                                    {{ if and .button_url }}
+                                    <a class="project-link" href="{{ .button_url }}" {{ if not (hasPrefix
+                                        .button_url "/" ) }}target="_blank" rel="noopener noreferrer" {{ end }}>
+                                        <button class="border project-link-button"><i>link_2</i></button>
+                                    </a>
+                                    {{ end }}
+                                </div>
+                                <div style="line-height: 1.2rem; margin-top: 1rem;">{{ .summary }}</div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+        <div class="contact page active responsive large-padding" id="contact">
+            <div class="career-header-container">
+                <h2 class="career-eyebrow">// Contact me</h2>
+                <div class="career-line desktop"></div>
+            </div>
+            <article>
+                <div class="grid">
+                    <div class="s12 m12 l6" id="contact-card-left">
+                        <div class="padding">
+                            <h6 class="bold no-margin">Get in touch</h6>
+                            <p>I'm always open to new opportunities, collaborations or questions! Drop me an email and
+                                I'll reply as soon as possible :)</p>
+                            <div class="row small-space">
+                                <i>mail</i>
+                                <a href="mailto:hi@danieldb.uk" class="link">
+                                    <span class="bold" style="font-size: large;">hi@danieldb.uk</span>
+                                </a>
+                            </div>
+                        </div>
+                        <hr class="medium s">
+                    </div>
+                    <div class="s12 m12 l6">
+                        <div class="padding">
+                            <h6 class="bold no-margin">Matrix</h6>
+                            <p>Prefer a decentralised communication platform? I'm on Matrix too! Fair warning, I check
+                                emails more frequently than I check Matrix.</p>
+                            <div class="row small-space">
+                                <i>
+                                    <img src="https://matrix.org/branding/icons/matrix-icon.svg"
+                                        style="filter: invert(1);" alt="Matrix Icon"></img>
+                                </i>
+                                <a href="https://matrix.to/#/@daniel:msg.danieldb.uk" class="link">
+                                    <span class="bold" style="font-size: large;">@daniel:msg.danieldb.uk</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
     </main>
 </body>
+<footer>
+    {{ partial "footer.html" . }}
+</footer>
 
 </html>
