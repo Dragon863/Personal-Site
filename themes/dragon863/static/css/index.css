@@ -111,7 +111,7 @@ a.link {
         display: none;
     }
 
-    #contact-card-left {
+    #card-with-edge-border {
         border-right: 2px solid #2D2D2D;
         border-radius: 0px 0px 0px 0px;
     }
