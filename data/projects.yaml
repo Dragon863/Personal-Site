@@ -1,6 +1,6 @@
 - title: "My Runshaw App"
   status: "Ongoing"
-  summary: "My largest project to date in both technical complexity and user adoption. This is a Flutter app I built after starting at college to help students with day-to-day actions like checking for buses and payment balance or sharing timetables. It quickly gained traction and ended up being used by almost every student."
+  summary: "My largest project to date in both technical complexity and user adoption. This is a Flutter app I built after starting at college to help students with day-to-day actions like checking for buses and payment balance or sharing timetables. It quickly gained traction and ended up being used by almost all 5000 students at my college."
   button_url: "https://apps.apple.com/gb/app/my-runshaw-unofficial/id6739817271"
   image: "content-res/images/runshaw-new-cover.png"
 - title: "EchoCLI"
