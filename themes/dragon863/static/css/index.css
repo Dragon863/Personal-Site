@@ -63,11 +63,6 @@ body {
     margin-top: 0px !important;
 }
 
-a.link {
-    text-shadow: 0 0 40px var(--primary) !important;
-}
-
-
 .eyebrow {
     font-weight: 700;
     font-family: Rubik, sans-serif;

@@ -57,7 +57,7 @@
             },
             {
                 "title": "Founded Runshaw Hack Club",
-                "summary": "I created a student-led club in my college which I run with two friends, teaching hardware, PCB design, web development, game dev, CAD and many other skills. I manage the website and do graphic design for the branding, and run the weekly sessions",
+                "summary": "I created a student-led club in my college which I ran with two friends, teaching hardware, PCB design, web development, game dev, CAD and many other skills. I managed the website and do graphic design for the branding, and ran the weekly sessions",
                 "type": "large",
                 "image": "/img/runshaw.png",
                 "date_published": "2024-11-23T12:00:00Z",
@@ -97,6 +97,17 @@
                 "button_url": "https://help.runshaw.ac.uk/",
                 "button_text": "Website",
                 "left": true,
+            },
+            {
+                "title": "PoC for Haven Manchester",
+                "summary": "I served as Person of Contact (PoC) for Hack Club Haven Manchester, taking the lead on external partnerships and securing Deloitte as an event sponsor. I coordinated with sponsors, venue staff and the organising team to help deliver a successful seven-hour hackathon for 27 students. I also helped oversee event logistics, resources and prizes, bringing together a day that produced 11 games and achieved a high attendee NPS",
+                "type": "large",
+                "image": "/img/haven.jpg",
+                "date_published": "2026-11-14T12:00:00Z",
+                "button_color": "green",
+                "button_url": "https://www.instagram.com/haven.manchester.hackclub/",
+                "button_text": "Photos",
+                "left": false,
             },
         ],
 }

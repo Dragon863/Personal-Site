@@ -1,8 +1,8 @@
 {{ define "main" }}
 {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
 <link rel="stylesheet" href="/css/single.css">
-<h1 class="bold large-padding m l" id="header-large">{{ .Title }}</h1>
-<h1 class="bold large-padding s" id="header-small">{{ .Title }}</h1>
+<h1 class="bold m l post-title" id="header-large">{{ .Title }}</h1>
+<h1 class="bold s post-title" id="header-small">{{ .Title }}</h1>
 
 <div class="max" style="border-bottom: 4px solid #FF2D2D;"></div>
 
@@ -20,5 +20,7 @@
 <br>
 {{ partial "buttons.html" . }}
 <br>
-{{ .Content }}
+<div class="post-content">
+    {{ .Content }}
+</div>
 {{ end }}

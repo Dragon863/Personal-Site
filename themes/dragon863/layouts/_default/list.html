@@ -1,10 +1,18 @@
 {{ define "main" }}
 <div class="overlay blur"></div>
 <!-- This file is a little (very) hacky as it uses hugo to inject into css. Don't do this. -->
-<h3 class="bold underline" style="padding-left:1rem;padding-top:1rem">Posts</h3>
+<h3 class="bold underline blog-page-title" style="padding-left:1rem;padding-top:1rem">Posts</h3>
 <h3 style="padding-left:1rem;font-size:1.5rem;padding-bottom:1rem;">(Click / tap on a title to view the full post!)
 </h3>
 <style>
+    .blog-page-title {
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .post-list-title {
+        font-family: 'Rubik', sans-serif;
+    }
+
     p {
         font-family: 'Roboto Flex', sans-serif;
     }
@@ -31,7 +39,7 @@
                 </div>
                 <div class="s8">
                     <div class="padding">
-                        <h5 class="bold">
+                        <h5 class="bold post-list-title">
                             <a href="{{ .RelPermalink }}">> {{ .Title }}</a>
                         </h5>
                         {{ partial "metadata-date.html" . }}
@@ -51,7 +59,7 @@
             <div class="grid no-space">
                 <div class="s8">
                     <div class="padding">
-                        <h5 class="bold">
+                        <h5 class="bold post-list-title">
                             <a href="{{ .RelPermalink }}">> {{ .Title }}</a>
                         </h5>
                         {{ partial "metadata-date.html" . }}
@@ -86,7 +94,7 @@
             </div>
             <div>
                 <div class="padding">
-                    <h5 class="bold">
+                    <h5 class="bold post-list-title">
                         <a href="{{ .RelPermalink }}">> {{ .Title }}</a>
                     </h5>
                     {{ partial "metadata-date.html" . }}
@@ -106,7 +114,7 @@
     <div class="s12">
         <article class="padding">
             <div>
-                <h5 class="bold">
+                <h5 class="bold post-list-title">
                     <a href="{{ .RelPermalink }}">> {{ .Title }}</a>
                 </h5>
                 {{ partial "metadata-date.html" . }}

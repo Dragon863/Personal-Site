@@ -1,78 +1,172 @@
-body {
-    font-family: 'Rubik', sans-serif;
+/* Post content styles are scoped so the site title and surrounding layout stay unchanged. */
+.post-title {
+    padding: 1.5rem 0 !important;
 }
 
-h5 {
-    padding-left: 1.5rem;
-}
-
-p {
+.post-content {
+    color: rgb(235, 235, 235);
     font-family: 'Noto Sans', sans-serif;
-    line-height: normal;
-    color: rgb(235, 235, 235);
-    font-size: 20px;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    text-align: left;
+    overflow-wrap: anywhere;
 }
 
-ul {
-    font-size: 20px;
-    padding-left: 20px;
+.post-content p,
+.post-content ul,
+.post-content ol,
+.post-content blockquote,
+.post-content table {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    text-align: left;
 }
 
-li::marker {
-    content: " >";
-    font-size: 20px;
-    font-weight: bold;
+.post-content p {
+    margin: 0 0 1.2em;
 }
 
-li {
-    padding-left: 8px;
-    font-size: 20px;
-    color: rgb(235, 235, 235);
+.post-content ul,
+.post-content ol {
+    padding-left: 1.6em;
+    margin: 0 0 1.2em;
 }
 
-#header-small {
-    font-weight: medium;
-    font-size: 48px;
-    letter-spacing: 1px;
-    color: white
+.post-content li {
+    padding-left: 0.35em;
+    margin: 0.35em 0;
 }
 
-#header-large {
-    font-weight: medium;
-    font-size: 72px;
-    letter-spacing: 1px;
-    color: white"
-
+.post-content li::marker {
+    color: #ff2d2d;
+    font-weight: 700;
 }
 
-h4 {
-    font-size: 32px;
-    font-weight: bold;
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    color: #fff;
+    font-family: Rubik, sans-serif;
+    font-weight: 700 !important;
+    line-height: 1.25;
+    text-align: left;
 }
 
-h5 {
-    padding-left: 0;
+.post-content h2 {
+    margin: 2em 0 0.7em;
+    font-size: 1.75rem;
 }
 
-main a {
-    color: #FF2D2D;
+.post-content h3 {
+    margin: 1.6em 0 0.6em;
+    font-size: 1.4rem;
+}
+
+.post-content h4 {
+    margin: 1.4em 0 0.55em;
+    font-size: 1.2rem;
+}
+
+.post-content h5,
+.post-content h6 {
+    margin: 1.2em 0 0.5em;
+    font-size: 1.05rem;
+}
+
+.post-content blockquote {
+    margin: 1.5em 0;
+    padding: 0.2em 1em;
+    border-left: 3px solid #ff2d2d;
+    color: #d5d5d5;
+}
+
+.post-content table {
+    display: block;
+    max-width: 100%;
+    margin: 1.5em 0;
+    overflow-x: auto;
+    border-collapse: collapse;
+}
+
+.post-content th,
+.post-content td {
+    padding: 0.65em 0.85em;
+    border: 1px solid #414047;
+    text-align: left;
+    vertical-align: top;
+}
+
+.post-content th {
+    color: #fff;
+    font-family: Rubik, sans-serif;
+    font-weight: 700;
+}
+
+.post-content a {
+    color: #ff4545;
     text-decoration: underline;
-    cursor: pointer;
-    -webkit-user-select: text;
-    user-select: text;
-    display: inline;
+    text-underline-offset: 0.15em;
 }
 
-nav a {
-    text-decoration: none !important;
-}
-
-code {
+.post-content code {
+    padding: 0.15em 0.35em;
+    border-radius: 4px;
+    background: #202127;
     color: #ffbe85;
-    background: #161f27;
-    font-size: 16px;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+    font-size: 0.88em;
+    overflow-wrap: anywhere;
 }
 
-h1 {
-    color: #FFFFFF;
+.post-content pre {
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 1.5em 0;
+    padding: 1em 1.15em;
+    overflow-x: auto;
+    border: 1px solid #34353d;
+    border-inline-start: 0.25rem solid #fff;
+    border-radius: 8px;
+    background: #191a20;
+    line-height: 1.55;
+    tab-size: 4;
+}
+
+.post-content pre code {
+    display: block;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    color: #e8e8e8;
+    font-size: 0.875rem;
+    overflow-wrap: normal;
+    white-space: pre;
+}
+
+@media (max-width: 600px) {
+    .post-content {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+
+    .post-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .post-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .post-content pre {
+        padding: 0.85em;
+    }
+}
+
+.post-title {
+    padding: 1.5rem 0 !important;
+    font-family: 'Rubik';
 }
