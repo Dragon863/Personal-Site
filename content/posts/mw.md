@@ -1,6 +1,6 @@
 ---
 title: "Analysing an interesting linux backdoor"
-date: 2026-11-04
+date: 2026-11-21
 draft: false
 header_image: mw_sample.png
 header_image_fit: cover
